@@ -1,0 +1,8 @@
+{
+  "name": "eslint-config-rafflebox",
+  "version": "0.1.0",
+  "main": "index.js",
+  "repository": "https://github.com/rafflebox-technologies-inc/eslint-config-rafflebox",
+  "author": "Jamie Archibald <jamie3@gmail.com>",
+  "license": "MIT"
+}
