@@ -23,7 +23,7 @@ Add .prettierrc to project root
 
 Add .editorconfig to project root
 
-```
+```ini
 # http://editorconfig.org
 root = true
 
