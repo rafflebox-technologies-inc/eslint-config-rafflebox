@@ -8,7 +8,7 @@ Add .eslintrc to project root
 
 ```json
 {
-  "extends": "eslint-config-neo/config-backend"
+  "extends": "eslint-config-rafflebox/config-backend"
 }
 ```
 
@@ -48,8 +48,8 @@ Add scripts for linting and formatting to package.json
 ```json
 "scripts": {
   "lint": "eslint .",
-  "format": "prettier --write \"**/*.{ts,tsx,js,json,graphql,md}\"",
-  "format:check": "prettier --debug-check \"**/*.{ts,tsx,js,json,graphql,md}\""
+  "format": "prettier --write \"**/*.{ts,js,json,md}\"",
+  "format:check": "prettier --debug-check \"**/*.{ts,js,json,md}\""
 }
 ```
 
