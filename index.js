@@ -1,12 +1,6 @@
 module.exports = {
-  extends: [
-    'eslint:recommended',
-    'plugin:node/recommended',
-    'plugin:unicorn/recommended',
-    'plugin:promise/recommended',
-    'prettier',
-  ],
-  plugins: ['node', 'unicorn', 'promise', 'import'],
+  extends: ['eslint:recommended', 'plugin:node/recommended', 'plugin:promise/recommended', 'prettier'],
+  plugins: ['node', 'promise', 'import'],
   parserOptions: {
     ecmaVersion: 2019,
     sourceType: 'module',
@@ -38,7 +32,12 @@ module.exports = {
         '@typescript-eslint/explicit-function-return-type': 'error',
         '@typescript-eslint/no-array-constructor': 'warn',
         '@typescript-eslint/no-namespace': 'error',
+        '@typescript-eslint/naming-convention': [
+          'error',
+          { selector: 'variableLike', format: ['camelCase', 'UPPER_CASE'], leadingUnderscore: 'allow' },
+        ],
         '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_+', varsIgnorePattern: '^_+' }],
+
         // enable this once typescript-eslint 2.9.0 is released
         // '@typescript-eslint/prefer-optional-chain': 'warn'
 
@@ -79,7 +78,7 @@ module.exports = {
     'no-throw-literal': 'error',
     'no-undef-init': 'error',
     'no-unneeded-ternary': 'warn',
-    'no-use-before-define': ['error', 'nofunc'],
+    // 'no-use-before-define': ['error', 'nofunc'],
     'no-useless-concat': 'warn',
     'no-var': 'warn',
     'padding-line-between-statements': [
@@ -107,13 +106,6 @@ module.exports = {
         ignores: ['modules'],
       },
     ],
-
-    'unicorn/catch-error-name': 'off',
-    'unicorn/consistent-function-scoping': 'off',
-    'unicorn/no-abusive-eslint-disable': 'off',
-    'unicorn/no-nested-ternary': 'warn',
-    'unicorn/no-process-exit': 'off',
-    'unicorn/prevent-abbreviations': 'off',
 
     'import/no-restricted-paths': ['error', { zones: [{ target: './src', from: './test' }] }],
     'import/no-absolute-path': 'error',
