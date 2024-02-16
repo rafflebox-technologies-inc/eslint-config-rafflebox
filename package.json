@@ -1,21 +1,21 @@
 {
   "name": "@rafflebox-technologies-inc/eslint-config-rafflebox",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "main": "index.js",
   "repository": "https://github.com/rafflebox-technologies-inc/eslint-config-rafflebox",
   "author": "Jamie Archibald <jamie@rafflebox.ca>",
   "license": "MIT",
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^6.20.0",
-    "@typescript-eslint/parser": "^6.20.0",
+    "@typescript-eslint/eslint-plugin": "^7.0.1",
+    "@typescript-eslint/parser": "^7.0.1",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^6.1.1"
   },
   "peerDependencies": {
-    "eslint": "^8.56.0",
-    "prettier": "^3.2.4",
-    "typescript": "^5.3.3"
+    "eslint": ">=8.56.0",
+    "prettier": ">=3.2.4",
+    "typescript": ">=5.3.2"
   }
 }
