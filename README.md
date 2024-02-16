@@ -8,7 +8,7 @@ Add .eslintrc to project root
 
 ```json
 {
-  "extends": "eslint-config-rafflebox/config-backend"
+  "extends": "@rafflebox-technologies-inc/eslint-config-rafflebox/config-backend"
 }
 ```
 
@@ -55,8 +55,4 @@ Add scripts for linting and formatting to package.json
 
 ## Publishing
 
-1. Update the version in package.json
-1. Commit your changes
-1. `npm pack --dry-run` to see what will be published
-1. `npm publish`
-1. Create a release on GitHub. Use the version as the tag and release name. For example for version `1.0.0` the tag and release name would be `v1.0.0`.
+A new version will be automatically published after merge to master
