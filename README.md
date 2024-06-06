@@ -51,3 +51,14 @@ import raffleboxVueConfig from '@rafflebox-technologies-inc/eslint-config-raffle
 
 export default raffleboxVueConfig;
 ```
+
+### VSCode
+
+VSCode's built-in eslint will not load the new "flat" configuration format for eslint. To ensure it will for anyone who uses the repository with vscode you can configure it using a settings file that gets commited to the repository.
+
+```json
+// .vscode/settings.json
+{
+  "eslint.experimental.useFlatConfig": true
+}
+```
