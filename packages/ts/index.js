@@ -8,9 +8,9 @@ export default [
     languageOptions: {
       parserOptions: {
         project: true,
-        tsconfigRootDir: import.meta.dirname,
-      },
-    },
+        tsconfigRootDir: import.meta.dirname
+      }
+    }
   }),
-  { ignores: ['node_modules/', 'dist/', 'build/'] },
+  { ignores: ['node_modules/', 'dist/', 'build/'] }
 ];

@@ -106,21 +106,25 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rafflebox-technologies-inc/eslint-config-rafflebox-node@workspace:typescript":
+"@rafflebox-technologies-inc/eslint-config-rafflebox-ts@workspace:packages/ts":
   version: 0.0.0-use.local
-  resolution: "@rafflebox-technologies-inc/eslint-config-rafflebox-node@workspace:typescript"
+  resolution: "@rafflebox-technologies-inc/eslint-config-rafflebox-ts@workspace:packages/ts"
   dependencies:
+    "@rafflebox-technologies-inc/rafflebox-prettier-config": "npm:^1.0.1"
+    eslint: "npm:>=9.4.0"
+    typescript: "npm:>=5.4.5"
     typescript-eslint: "npm:^7.12.0"
   peerDependencies:
-    eslint: ">=8.57.0"
+    eslint: ">=9.4.0"
     typescript: ">=5.4.5"
   languageName: unknown
   linkType: soft
 
-"@rafflebox-technologies-inc/eslint-config-rafflebox-vue@workspace:vue":
+"@rafflebox-technologies-inc/eslint-config-rafflebox-vue3@workspace:packages/vue3":
   version: 0.0.0-use.local
-  resolution: "@rafflebox-technologies-inc/eslint-config-rafflebox-vue@workspace:vue"
+  resolution: "@rafflebox-technologies-inc/eslint-config-rafflebox-vue3@workspace:packages/vue3"
   dependencies:
+    "@rafflebox-technologies-inc/rafflebox-prettier-config": "npm:^1.0.1"
     eslint: "npm:^9.4.0"
     eslint-plugin-vue: "npm:^9.26.0"
     typescript: "npm:^5.4.5"
@@ -136,6 +140,13 @@ __metadata:
   resolution: "@rafflebox-technologies-inc/eslint-config-rafflebox@workspace:."
   languageName: unknown
   linkType: soft
+
+"@rafflebox-technologies-inc/rafflebox-prettier-config@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "@rafflebox-technologies-inc/rafflebox-prettier-config@npm:1.0.1::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40rafflebox-technologies-inc%2Frafflebox-prettier-config%2F1.0.1%2F317d528eb93b8fb5ea7a2eed42c42b757036bf56"
+  checksum: 10c0/75deb98b5b7a43a5563a46be8fa247bac15c3f3d4698eb56bea102ff96a9a22eb317372a0f745db727b9165306c536a901ed073461f604a48cd04259a847f24e
+  languageName: node
+  linkType: hard
 
 "@typescript-eslint/eslint-plugin@npm:7.12.0":
   version: 7.12.0
@@ -620,7 +631,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^9.4.0":
+"eslint@npm:>=9.4.0, eslint@npm:^9.4.0":
   version: 9.4.0
   resolution: "eslint@npm:9.4.0"
   dependencies:
@@ -1312,7 +1323,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:^5.4.5":
+"typescript@npm:>=5.4.5, typescript@npm:^5.4.5":
   version: 5.4.5
   resolution: "typescript@npm:5.4.5"
   bin:
@@ -1322,7 +1333,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@npm%3A^5.4.5#optional!builtin<compat/typescript>":
+"typescript@patch:typescript@npm%3A>=5.4.5#optional!builtin<compat/typescript>, typescript@patch:typescript@npm%3A^5.4.5#optional!builtin<compat/typescript>":
   version: 5.4.5
   resolution: "typescript@patch:typescript@npm%3A5.4.5#optional!builtin<compat/typescript>::version=5.4.5&hash=5adc0c"
   bin:
