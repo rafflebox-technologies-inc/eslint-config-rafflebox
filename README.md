@@ -1,58 +1,53 @@
 # Rafflebox ESLint
 
+This is a monorepo containing configurations for our code linting.
+
 ## Installation
 
-`yarn add --dev eslint-config-rafflebox`
+To use our configs in the project, install and configure the correct package depending on the type of project.
 
-Add .eslintrc to project root
-
-```json
-{
-  "extends": "@rafflebox-technologies-inc/eslint-config-rafflebox/config-backend"
-}
-```
-
-Add .prettierrc to project root
-
-```json
-{
-  "printWidth": 120,
-  "singleQuote": true
-}
-```
-
-Add .editorconfig to project root
-
-```ini
-# http://editorconfig.org
-root = true
-
-[*]
-charset = utf-8
-end_of_line = lf
-indent_size = 2
-indent_style = space
-insert_final_newline = true
-max_line_length = 120
-
-[*.md]
-max_line_length = 0
-trim_trailing_whitespace = false
-
-[COMMIT_EDITMSG]
-max_line_length = 0
-```
-
-Add scripts for linting and formatting to package.json
+Add a lint script to the project's package.json
 
 ```json
 "scripts": {
   "lint": "eslint .",
-  "format": "prettier --write \"**/*.{ts,js,json,md}\"",
-  "format:check": "prettier --debug-check \"**/*.{ts,js,json,md}\""
 }
 ```
 
-## Publishing
+### Node/Typescript project
 
-A new version will be automatically published after merge to master
+First you will need to have `eslint` and `typescript` as dev dependencies of the project
+
+Then you can add our config as a dev dependency
+
+```sh
+yarn add -D @rafflebox-technologies-inc/eslint-config-rafflebox-ts
+```
+
+Add/Update your eslint config file at the root of the project
+
+```ts
+// eslint.config.js
+import raffleboxTSConfig from '@rafflebox-technologies-inc/eslint-config-rafflebox-ts';
+
+export default raffleboxTSConfig;
+```
+
+### Vue project
+
+First you will need to have `eslint` and `typescript` as dev dependencies of the project
+
+Then you can add our config as a dev dependency
+
+```sh
+yarn add -D @rafflebox-technologies-inc/eslint-config-rafflebox-ts
+```
+
+Add/Update your eslint config file at the root of the project
+
+```ts
+// eslint.config.js
+import raffleboxVueConfig from '@rafflebox-technologies-inc/eslint-config-rafflebox-vue';
+
+export default raffleboxVueConfig;
+```
