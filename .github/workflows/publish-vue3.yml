@@ -23,5 +23,6 @@ jobs:
 
       - name: Publish
         run: |
-          cd vue
+          cd packages
+          cd vue3
           yarn npm publish

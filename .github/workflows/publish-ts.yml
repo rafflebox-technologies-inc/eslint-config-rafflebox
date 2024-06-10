@@ -23,5 +23,6 @@ jobs:
 
       - name: Publish
         run: |
-          cd typescript
+          cd packages
+          cd ts
           yarn npm publish
