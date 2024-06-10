@@ -5,7 +5,7 @@ on:
     branches:
       - master
     paths:
-      - packages/vue3/**
+      - packages/vue3/package.json
 
 jobs:
   publish:

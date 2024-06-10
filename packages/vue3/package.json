@@ -1,6 +1,6 @@
 {
   "name": "@rafflebox-technologies-inc/eslint-config-rafflebox-vue3",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "index.mjs",
   "repository": "https://github.com/rafflebox-technologies-inc/eslint-config-rafflebox",
   "author": "Rafflebox <developers@rafflebox.org>",
