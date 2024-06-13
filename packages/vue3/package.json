@@ -16,8 +16,8 @@
   "devDependencies": {
     "@rafflebox-technologies-inc/rafflebox-prettier-config": "^1.0.1",
     "eslint": "^9.4.0",
-    "typescript": "^5.4.5",
-    "eslint-plugin-vitest": "^0.5.4"
+    "eslint-plugin-vitest": "^0.5.4",
+    "typescript": "^5.4.5"
   },
   "peerDependencies": {
     "eslint": ">=9.4.0",
