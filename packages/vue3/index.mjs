@@ -30,5 +30,5 @@ export default tseslint.config(
     }
   },
   ...commonRules,
-  { ignores: ['node_modules/', 'dist/', 'build/', 'vitest.config.ts', 'vite.config.ts', 'tailwind.config.js'] }
+  { ignores: ['node_modules/', 'dist/', 'build/'] }
 );
