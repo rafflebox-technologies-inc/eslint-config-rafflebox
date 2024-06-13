@@ -4,12 +4,24 @@ import pluginVue from 'eslint-plugin-vue';
 import vitest from 'eslint-plugin-vitest';
 import commonRules from '@rafflebox-technologies-inc/eslint-config-rafflebox-common';
 
-export default [
+export default tseslint.config(
   eslint.configs.recommended,
   ...tseslint.configs.recommended,
   ...pluginVue.configs['flat/recommended'],
   {
-    files: ['tests/**'],
+    plugins: {
+      'typescript-eslint': tseslint.plugin
+    },
+    languageOptions: {
+      parserOptions: {
+        parser: tseslint.parser,
+        project: './tsconfig.lint.json',
+        extraFileExtensions: ['.vue'],
+        sourceType: 'module'
+      }
+    }
+  },
+  {
     plugins: {
       vitest
     },
@@ -19,4 +31,4 @@ export default [
   },
   ...commonRules,
   { ignores: ['node_modules/', 'dist/', 'build/'] }
-];
+);
