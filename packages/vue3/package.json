@@ -21,8 +21,8 @@
   },
   "peerDependencies": {
     "eslint": ">=9.4.0",
-    "typescript": ">=5.4.5"
-    "vitest":
+    "typescript": ">=5.4.5",
+    "vitest": ">=1"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
