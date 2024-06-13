@@ -4,6 +4,8 @@ import eslint from '@eslint/js';
 import tseslint from 'typescript-eslint';
 import jest from 'eslint-plugin-jest';
 
+import commonRules from '@rafflebox-technologies-inc/eslint-config-rafflebox-common';
+
 export default [
   ...tseslint.config(
     eslint.configs.recommended,
@@ -21,23 +23,7 @@ export default [
       extends: [tseslint.configs.disableTypeChecked]
     }
   ),
-  {
-    rules: {
-      // Allow unused args that start with underscore
-      '@typescript-eslint/no-unused-vars': [
-        'error',
-        {
-          args: 'all',
-          argsIgnorePattern: '^_',
-          caughtErrors: 'all',
-          caughtErrorsIgnorePattern: '^_',
-          destructuredArrayIgnorePattern: '^_',
-          varsIgnorePattern: '^_',
-          ignoreRestSiblings: true
-        }
-      ]
-    }
-  },
+  ...commonRules,
   {
     files: ['test/**/*.{test,spec}.ts'],
     ...jest.configs['flat/recommended'],
