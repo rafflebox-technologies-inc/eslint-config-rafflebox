@@ -1,6 +1,6 @@
 {
   "name": "@rafflebox-technologies-inc/eslint-config-rafflebox-vue2",
-  "version": "0.0.18",
+  "version": "0.0.19",
   "repository": "https://github.com/rafflebox-technologies-inc/eslint-config-rafflebox",
   "author": "Rafflebox <developers@rafflebox.org>",
   "license": "UNLICENSED",
@@ -8,6 +8,7 @@
   "prettier": "@rafflebox-technologies-inc/rafflebox-prettier-config",
   "dependencies": {
     "@rafflebox-technologies-inc/eslint-config-rafflebox-common": "workspace:^",
+    "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-jest": "^28.5.0",
     "eslint-plugin-vue": "^9.26.0",
     "globals": "^15.4.0",
@@ -16,7 +17,6 @@
   "devDependencies": {
     "@rafflebox-technologies-inc/rafflebox-prettier-config": "^1.0.1",
     "eslint": "^9.4.0",
-    "eslint-plugin-jest": "^28.5.0",
     "typescript": "^5.4.5"
   },
   "peerDependencies": {

@@ -3,6 +3,7 @@
 import eslint from '@eslint/js';
 import tseslint from 'typescript-eslint';
 import jest from 'eslint-plugin-jest';
+import eslintConfigPrettier from 'eslint-config-prettier';
 
 import commonRules from '@rafflebox-technologies-inc/eslint-config-rafflebox-common';
 
@@ -41,5 +42,6 @@ export default [
       '@typescript-eslint/no-unsafe-member-access': 'off'
     }
   },
+  eslintConfigPrettier,
   { ignores: ['node_modules/', 'dist/', 'build/'] }
 ];

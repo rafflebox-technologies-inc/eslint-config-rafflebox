@@ -3,6 +3,7 @@ import tseslint from 'typescript-eslint';
 import pluginVue from 'eslint-plugin-vue';
 import jest from 'eslint-plugin-jest';
 import globals from 'globals';
+import eslintConfigPrettier from 'eslint-config-prettier';
 import commonRules from '@rafflebox-technologies-inc/eslint-config-rafflebox-common';
 
 export default tseslint.config(
@@ -22,5 +23,6 @@ export default tseslint.config(
     ...jest.configs['flat/recommended']
   },
   ...commonRules,
+  eslintConfigPrettier,
   { ignores: ['node_modules/', 'dist/', 'build/'] }
 );
