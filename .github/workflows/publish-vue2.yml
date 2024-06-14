@@ -1,4 +1,4 @@
-name: Publish Node/Typescript Lint Config
+name: Publish Vue2 Lint Config
 
 on:
   push:
@@ -9,7 +9,7 @@ on:
 
 jobs:
   publish:
-    name: Publish TS Lint config
+    name: Publish
     env:
       NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
     runs-on: ubuntu-latest
