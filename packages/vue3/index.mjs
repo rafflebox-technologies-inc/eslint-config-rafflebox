@@ -4,11 +4,13 @@ import pluginVue from 'eslint-plugin-vue';
 import vitest from 'eslint-plugin-vitest';
 import eslintConfigPrettier from 'eslint-config-prettier';
 import commonRules from '@rafflebox-technologies-inc/eslint-config-rafflebox-common';
+import pluginVueA11y from 'eslint-plugin-vuejs-accessibility';
 
 export default tseslint.config(
   eslint.configs.recommended,
   ...tseslint.configs.recommended,
   ...pluginVue.configs['flat/recommended'],
+  ...pluginVueA11y.configs['flat/recommended'],
   {
     plugins: {
       'typescript-eslint': tseslint.plugin
