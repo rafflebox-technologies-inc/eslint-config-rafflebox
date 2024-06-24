@@ -11,6 +11,7 @@
   "dependencies": {
     "@rafflebox-technologies-inc/eslint-config-rafflebox-common": "workspace:^",
     "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-vuejs-accessibility": "^2.3.1",
     "eslint-plugin-vitest": "^0.5.4",
     "eslint-plugin-vue": "^9.26.0",
     "typescript-eslint": "^7.13.0"
@@ -18,7 +19,6 @@
   "devDependencies": {
     "@rafflebox-technologies-inc/rafflebox-prettier-config": "^1.0.1",
     "eslint": "^8.57.0",
-    "eslint-plugin-vuejs-accessibility": "^2.3.1",
     "typescript": "^5.4.5"
   },
   "peerDependencies": {
