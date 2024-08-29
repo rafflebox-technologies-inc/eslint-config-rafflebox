@@ -1,4 +1,4 @@
-name: Publish Jest Lint Config
+name: Publish Vitest Lint Config
 
 on:
   push:
