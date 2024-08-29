@@ -6,6 +6,7 @@ on:
       - master
     paths:
       - packages/vitest/package.json
+  workflow_dispatch:
 
 jobs:
   publish:
