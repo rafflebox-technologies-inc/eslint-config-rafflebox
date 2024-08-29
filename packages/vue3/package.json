@@ -1,6 +1,6 @@
 {
   "name": "@rafflebox-technologies-inc/eslint-config-rafflebox-vue3",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "main": "index.mjs",
   "repository": "https://github.com/rafflebox-technologies-inc/eslint-config-rafflebox",
   "author": "Rafflebox <developers@rafflebox.org>",
@@ -10,10 +10,10 @@
   "prettier": "@rafflebox-technologies-inc/rafflebox-prettier-config",
   "dependencies": {
     "@rafflebox-technologies-inc/eslint-config-rafflebox-common": "workspace:^",
+    "@rafflebox-technologies-inc/eslint-config-rafflebox-vitest": "workspace:^",
     "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-vuejs-accessibility": "^2.3.1",
-    "eslint-plugin-vitest": "^0.5.4",
     "eslint-plugin-vue": "^9.26.0",
+    "eslint-plugin-vuejs-accessibility": "^2.3.1",
     "typescript-eslint": "^7.13.0"
   },
   "devDependencies": {

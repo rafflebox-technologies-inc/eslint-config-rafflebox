@@ -1,9 +1,9 @@
 import eslint from '@eslint/js';
 import tseslint from 'typescript-eslint';
 import pluginVue from 'eslint-plugin-vue';
-import vitest from 'eslint-plugin-vitest';
 import eslintConfigPrettier from 'eslint-config-prettier';
 import commonRules from '@rafflebox-technologies-inc/eslint-config-rafflebox-common';
+import vitestRules from '@rafflebox-technologies-inc/eslint-config-rafflebox-vitest';
 import pluginVueA11y from 'eslint-plugin-vuejs-accessibility';
 
 export default tseslint.config(
@@ -24,14 +24,7 @@ export default tseslint.config(
       }
     }
   },
-  {
-    plugins: {
-      vitest
-    },
-    rules: {
-      ...vitest.configs.recommended.rules
-    }
-  },
+  ...vitestRules,
   ...commonRules,
   eslintConfigPrettier,
   { ignores: ['node_modules/', 'dist/', 'build/'] }

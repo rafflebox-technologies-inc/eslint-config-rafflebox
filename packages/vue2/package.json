@@ -1,11 +1,12 @@
 {
   "name": "@rafflebox-technologies-inc/eslint-config-rafflebox-vue2",
-  "version": "0.0.19",
+  "version": "0.0.22",
   "repository": "https://github.com/rafflebox-technologies-inc/eslint-config-rafflebox",
   "author": "Rafflebox <developers@rafflebox.org>",
   "license": "UNLICENSED",
   "packageManager": "yarn@4.2.2+sha256.1aa43a5304405be7a7cb9cb5de7b97de9c4e8ddd3273e4dad00d6ae3eb39f0ef",
   "prettier": "@rafflebox-technologies-inc/rafflebox-prettier-config",
+  "main": "index.mjs",
   "dependencies": {
     "@rafflebox-technologies-inc/eslint-config-rafflebox-common": "workspace:^",
     "eslint-config-prettier": "^9.1.0",
@@ -26,9 +27,5 @@
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
-  },
-  "exports": {
-    "import": "./index.js",
-    "require": "./index.js"
   }
 }

@@ -1,0 +1,32 @@
+name: Publish Jest Lint Config
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - packages/vitest/package.json
+
+jobs:
+  publish:
+    name: Publish
+    env:
+      NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Enable Corepack
+        run: corepack enable
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: '.nvmrc'
+          registry-url: 'https://npm.pkg.github.com'
+
+      - name: Publish
+        run: |
+          cd packages
+          cd vitest
+          yarn npm publish

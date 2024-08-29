@@ -19,6 +19,19 @@ export default tseslint.config(
   ...tseslint.configs.recommended,
   ...pluginVue.configs['flat/vue2-recommended'],
   {
+    plugins: {
+      'typescript-eslint': tseslint.plugin
+    },
+    languageOptions: {
+      parserOptions: {
+        parser: tseslint.parser,
+        project: './tsconfig.lint.json',
+        extraFileExtensions: ['.vue'],
+        sourceType: 'module'
+      }
+    }
+  },
+  {
     files: ['tests/**'],
     ...jest.configs['flat/recommended']
   },
