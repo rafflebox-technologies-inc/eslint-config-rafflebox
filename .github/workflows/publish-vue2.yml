@@ -6,6 +6,7 @@ on:
       - master
     paths:
       - packages/vue2/package.json
+  workflow_dispatch:
 
 jobs:
   publish:

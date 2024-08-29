@@ -6,6 +6,7 @@ on:
       - master
     paths:
       - packages/jest/package.json
+  workflow_dispatch:
 
 jobs:
   publish:
