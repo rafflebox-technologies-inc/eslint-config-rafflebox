@@ -1,6 +1,6 @@
 {
   "name": "@rafflebox-technologies-inc/eslint-config-rafflebox-ts",
-  "version": "2.0.2",
+  "version": "3.0.0",
   "main": "index.mjs",
   "repository": "https://github.com/rafflebox-technologies-inc/eslint-config-rafflebox",
   "author": "Rafflebox <developers@rafflebox.org>",
@@ -10,17 +10,17 @@
   "prettier": "@rafflebox-technologies-inc/rafflebox-prettier-config",
   "dependencies": {
     "@rafflebox-technologies-inc/eslint-config-rafflebox-common": "workspace:^",
-    "eslint-config-prettier": "^9.1.0",
-    "typescript-eslint": "^7.12.0"
+    "eslint-config-prettier": "^10.1.8",
+    "typescript-eslint": "^8.41.0"
   },
   "devDependencies": {
     "@rafflebox-technologies-inc/rafflebox-prettier-config": "^1.0.1",
-    "eslint": ">=8.57.0",
-    "typescript": ">=5.4.5"
+    "eslint": ">=9.26.0",
+    "typescript": ">=5.5.0"
   },
   "peerDependencies": {
-    "eslint": ">=8.57.0",
-    "typescript": ">=5.4.5"
+    "eslint": ">=9.26.0",
+    "typescript": ">=5.5.0"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
