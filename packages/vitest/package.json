@@ -1,6 +1,6 @@
 {
   "name": "@rafflebox-technologies-inc/eslint-config-rafflebox-vitest",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "main": "index.mjs",
   "repository": "https://github.com/rafflebox-technologies-inc/eslint-config-rafflebox",
   "author": "Rafflebox <developers@rafflebox.org>",
@@ -12,11 +12,11 @@
     "eslint-plugin-vitest": "^0.5.4"
   },
   "devDependencies": {
-    "eslint": ">=8.57.0",
+    "eslint": ">=9.26.0",
     "eslint-plugin-vitest": "^0.5.4"
   },
   "peerDependencies": {
-    "eslint": ">=8.57.0",
+    "eslint": ">=9.26.0",
     "vitest": "*"
   },
   "publishConfig": {
